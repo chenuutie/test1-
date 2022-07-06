@@ -3,19 +3,28 @@
 <head>
     <title>HTML網站練習</title>
     <style>
-        body{background-color: tan;}
+        body{background-color:rgb(218, 167, 73);}
     </style>
+
+<meta property="og:title" content="A Basic HTML5 Template">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+<meta property="og:description" content="A simple HTML5 Template for new projects.">
+<meta property="og:image" img src="../test1-/index-image/Pink.jpg">
+<!--FB放塗鴉牆吃meta的內容-->
 </head>
 
 <html>
     <body>
-      <div style="padding:50px;word-spacing:50px;
-      top:50px;right:20px;position:absolute;border:2px">
-        <button><a href="../test1-/課堂練習1/inner/1.html">選單1</a></button>
-        <a href="../test1-/課堂練習1/inner/2.html">選單2</a>
-        <a href="../test1-/課堂練習1/inner/3.html">選單3</a>
-        <a href="../test1-/課堂練習1/inner2/4.html">選單4</a>
-        <a href="../test1-/課堂練習1/inner2/5.html">選單5</a>
+    <div style="padding:50px;word-spacing:50px;top:50px;right:20px;position:absolute;border:2px
+      ">
+        <button style="background-color: rgb(50, 50, 166);color:aliceblue
+        "><a href="../test1-/課堂練習1/inner/1.html">選單1</a></button>
+            <a href="../test1-/課堂練習1/inner/2.html">選單2</a>
+            <a href="../test1-/課堂練習1/inner/3.html">選單3</a>
+            <a href="../test1-/課堂練習1/inner2/4.html">選單4</a>
+            <a href="../test1-/課堂練習1/inner2/5.html">選單5</a>
+        </button>
     </div>
 
         <h1 style="font-size:80px">WEBSITE</h1> 
@@ -34,7 +43,9 @@
                 <span style="color: darkolivegreen;">
                     <b>span&nbsp;和div相比較小段</b></span></p>
         </div>
-       
+       <iframe style="top:550px;right:20px;position:absolute;" width="500" height="300" src="https://www.youtube.com/embed/TegcFOtt64s" title="YouTube video player" frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--youtube崁入可直接貼上html-->
         <div>
             <ul>
                 <li>我是第一項</li>
@@ -79,8 +90,39 @@
                 <td>小華<br>小安</td>
                 <td>107012003<br>107012004</td>
             </tr>
-        </tbody>
         </table>
        </div>
+<hr>
+       <form action="/formprocess.php"method="post"/>
+<!-- action為指定一個位址(URL),這位址是告訴瀏覽器(browser) 當user送出表單後,將表格的內容送去哪
+     method為指定資料傳輸時用的HTTP協議，最常用的是get或post-->
+       <p>你的名字</p>
+       <p><input type="text" neme="neme" value=OOO></p>
+       <!--text:建立一個文字輸入欄位 / summit:建立送出表單按鈕 / value:顯示在欄位內初始值,summit也會用到 
+        / 註:input是空元素不用closing tag -->
+      
+       <p>Email:</p>
+       <p><input name="species" type="text" placeholde="請輸入email"></p>
+       <!--name:指定送出去的該資料用什麼名稱,目的讓遠端伺服器透過明確定義好的名稱去取出對應欄位值
+       placeholder:背景提示-->
+   
+       <p>Comments: </p>
+       <p><textarea name="comments" rows="5" cols="20">你的留言</textarea></p>
+       <!--textarea用來宣告1個可輸入多行文字的輸入框框 ex.blog後台使用
+       row:列數(高) / cols:行數(寬)-->
+   
+       <p>選擇獲得優惠管道</p>
+       <p><input type="radio" name="discount" value="facebook">FACEBOOK <span><input type="radio" name="discount" value="LINE">LINE</span>
+       <span><input type="radio" name="discount" value="email">E-MAIL</span></p>
+       <!--ratio:處理表單多選一選項按鈕 / 同一組radio button選項，都是一樣的name-->
+       <p><input type="submit" value="送出資料"></p>
+
+       <select><option>男</option><option>女</option>
+        <label><input type="radio" name="choice" value="yes">yes</label>
+        <label><input type="radio" name="choice" value="no">no</label>
+        <!--label常見的用途:增加表單元件的可點擊範圍,將元件包入標籤即可
+        如此點文字效果會等於直接點了checkbox-->
+ 
+    </form>
     </body>
 </html>
