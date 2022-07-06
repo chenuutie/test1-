@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--決定瀏覽器用什麼引擎解讀--> 
+<head>
+    <title>HTML網站練習</title>
+    <style>
+        body{background-color:rgb(223, 200, 158);}
+    </style>
+
+<meta property="og:title" content="HTML練習網站">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+<meta property="og:description" content="A simple HTML5 Template for new projects.">
+<meta property="og:image" content="pancake.png">
+<!--FB放塗鴉牆吃meta的內容 / Open Graph Tag(開放社交關係圖)-->
+</head>
+
+<html>
+<body>
+    <div>
+        <ul>
+            <li>我是第一項</li>
+            <li>我是第二項</li>
+            <li>我是第三項</li>
+        </ul>
+       <ol>
+            <li>我是第一項</li>
+            <li>我是第二項</li>
+            <li>我是第三項
+                <ul>
+                    <li>我是第一項</li>
+                    <li>我是第二項</li>
+                    <li>我是第三項</li>
+                
+                </ul>
+            </li>
+            <!---ul為圓點 ol會列序
+                標籤可在輸入時*倍數 ex. ul>li*10-->
+       </ol>
+    </div>
+
+      
+    <div>
+        <table style="border:2px #000 dashed" rules="cols #000 dashed" cellpadding="5";>
+            <tbody>
+            <tr style="background-color:rgb(221, 221, 184)"> 
+                <!---table row(tr) / table data(td)實際單元格資料 / table header(th)表格欄位的標題-->
+                <th>組別</th>
+                <th>組員</th>
+                <th>學號</th>
+                <th>總人數</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>小明<br>小雨</td>
+                <td>107012001<br>107012002</td>
+                <td rowspan="2"><span style="color:crimson">4</span></td>
+                <!---rowspan="2" 表示從這一列開始往下合併至下一列 (共2列) 後面省略td-->
+                <!--顯示水平線就寫rules="rows"，只顯示垂直線就寫"cols"，全部 "all"-->
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>小華<br>小安</td>
+                <td>107012003<br>107012004</td>
+            </tr>
+        </table>
+       </div>
+
+       <div style="top:-5px;left:500px;position:relative;">
+        <a href="https://github.com/chenuutie/test1-" target="_blank">連到我的github</a>
+    <!--超連結屬性 _blank為開新頁面-->
+        <p id="word">空白字元 &nbsp;&nbsp;&nbsp;空白字元</p>
+        <p><strong>測試半形</strong>&ensp;的距離</p> <p>全形&emsp;全形</p>
+        <!---半形空格&ensp;全形空格emsp;窄空格thinsp-->
+
+        
+    </div>
+</body>
