@@ -3,14 +3,14 @@
 <head>
     <title>HTML網站練習</title>
     <style>
-        body{background-color:rgb(218, 167, 73);}
+        body{background-color:rgb(238, 210, 214);}
     </style>
 
 <meta property="og:title" content="HTML練習網站">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
 <meta property="og:description" content="A simple HTML5 Template for new projects.">
-<meta property="og:image" content="pancake.png">
+<meta property="og:image" content="https://chenuutie.github.io/test1-/pancake.png">
 <!--FB放塗鴉牆吃meta的內容 / Open Graph Tag(開放社交關係圖)-->
 </head>
 
@@ -18,8 +18,9 @@
     <body>
     <div style="padding:50px;word-spacing:50px;top:50px;right:20px;position:absolute;border:2px
       ">
-        <button style="background-color: rgb(50, 50, 166);color:aliceblue
-        "><a href="../test1-/課堂練習1/inner/1.html">選單1</a></button>
+     
+        <button style="background-color: rgb(252, 241, 173)">
+            <a href="../test1-/課堂練習1/inner/1.html" style="color:rgb(193, 119, 161)">選單1</a></button>
             <a href="../test1-/課堂練習1/inner/2.html">選單2</a>
             <a href="../test1-/課堂練習1/inner/3.html">選單3</a>
             <a href="../test1-/課堂練習1/inner2/4.html">選單4</a>
@@ -28,7 +29,7 @@
     </div>
 
         <h1 style="font-size:80px">WEBSITE</h1> 
-    <div style="top:150px;right:20px;position:absolute">
+    <div style="top:-10px;left:250px;position:relative">
         <img src="./index-image/Pink.jpg" alt="橫幅" width="960" height="360" title="滑過去有字" >
         <!--當圖片無法顯示時，瀏覽器會顯示此文字。這文字說明對 SEO 也很有助益-->
     </div>    
@@ -39,59 +40,12 @@
             <p><strong>測試半形</strong>&ensp;的距離</p> <p>全形&emsp;全形</p>
             <!---半形空格&ensp;全形空格emsp;窄空格thinsp-->
 
-            <p>
-                <span style="color: darkolivegreen;">
-                    <b>span&nbsp;和div相比較小段</b></span></p>
+            
         </div>
-       <iframe style="top:550px;right:20px;position:absolute;" width="500" height="300" src="https://www.youtube.com/embed/TegcFOtt64s" title="YouTube video player" frameborder="0" allow="accelerometer; 
+       <iframe style="top:-5px;left:500px;position:relative;" width="500" height="300" src="https://www.youtube.com/embed/TegcFOtt64s" title="YouTube video player" frameborder="0" allow="accelerometer; 
         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!--youtube崁入可直接貼上html-->
-        <div>
-            <ul>
-                <li>我是第一項</li>
-                <li>我是第二項</li>
-                <li>我是第三項</li>
-            </ul>
-           <ol>
-                <li>我是第一項</li>
-                <li>我是第二項</li>
-                <li>我是第三項
-                    <ul>
-                        <li>我是第一項</li>
-                        <li>我是第二項</li>
-                        <li>我是第三項</li>
-                    
-                    </ul>
-                </li>
-                <!---ul為圓點 ol會列序
-                    標籤可在輸入時*倍數 ex. ul>li*10-->
-           </ol>
-        </div>
-       <div>
-        <table style="border:2px #000 dashed" rules="cols #000 dashed" cellpadding="5";>
-            <tbody>
-            <tr style="background-color:rgb(221, 221, 184)"> 
-                <!---table row(tr) / table data(td)實際單元格資料 / table header(th)表格欄位的標題-->
-                <th>組別</th>
-                <th>組員</th>
-                <th>學號</th>
-                <th>總人數</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>小明<br>小雨</td>
-                <td>107012001<br>107012002</td>
-                <td rowspan="2"><span style="color:crimson">4</span></td>
-                <!---rowspan="2" 表示從這一列開始往下合併至下一列 (共2列) 後面省略td-->
-                <!--顯示水平線就寫rules="rows"，只顯示垂直線就寫"cols"，全部 "all"-->
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>小華<br>小安</td>
-                <td>107012003<br>107012004</td>
-            </tr>
-        </table>
-       </div>
+      
 <hr>
        <form action="/formprocess.php"method="post"/>
 <!-- action為指定一個位址(URL),這位址是告訴瀏覽器(browser) 當user送出表單後,將表格的內容送去哪
