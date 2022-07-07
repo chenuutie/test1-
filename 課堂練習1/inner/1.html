@@ -9,27 +9,29 @@
             background-color: darkkhaki;color:beige
         }
         nav > ul{list-style: none;background-color:rgba(189, 183, 107, 0.773);
-            margin:0;padding:0;/*黎邊界距離*/
+            margin:0;padding:0;/*離邊界距離*/
         }
 
-        .inline-block-nav>li {
-            display:inline-block;
+        .inline-block-nav > li {  display:inline-block;}
         .inline-block-nav {
+            font-size:0;
             text-align: center;
-            /*inline-block其實還是inline elements,可把它們想成是一行「看起來像 block 的文字*/
+            /*inline-block其實還是inline elements,可把它們想成是一行「看起來像 block 的文字
+            (1)和Flexbox相比inline-block做的導覽列稍寬，各元素之間有小小的空隙
+            (2)有針對<a>設字型大小但<ul>沒有其他元素,故將size降為0消除換行及空格造成的空隙。*/
         }
-        }
+        
     </style>
 </head>
 <body>
     <nav><ul class="inline-block-nav">
-    <li><a href="../inner/1.html">我是網頁1</a></li>
-    <li> <a href="../inner/2.html">我是網頁2</a></li>
-    <li><a href="../inner/3.html">我是網頁3</a></li>
-    <li> <a HREF="../inner2/4.html">我是網頁4</a></li>
-    <li><a href="../inner2/5.html">我是網頁5</a></li>
+    <li><a href="../inner/1.html">網頁1</a></li>
+    <li> <a href="../inner/2.html">網頁2</a></li>
+    <li><a href="../inner/3.html">網頁3</a></li>
+    <li> <a HREF="../inner2/4.html">網頁4</a></li>
+    <li><a href="../inner2/5.html">網頁5</a></li>
     <!--../抓取上一層   ./ 為現在檔案位置-->
-    <li> <a href="../../lilicoco.html">回到哩哩叩叩</a></li>
+    <li> <a href="../../lilicoco.html">哩哩叩叩</a></li>
     <!--檔案若在上3層,就要3次../-->
     </nav></ul>
 

@@ -2,32 +2,48 @@
 <!--決定瀏覽器用什麼引擎解讀--> 
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="這是一個標籤練習的網站">
+    <meta name="author" content="chenuutie">
+    <meta name="keywords" content="練習,html,鈺婷">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--name:定義 後面放入描述
+    viewport:視口 根據瀏覽器/設備調整頁面大小-->
+
     <title>哩哩扣扣</title>
+
+    <!--告訴瀏覽器，從此段開始都為CSS語法，要插入CSS語法>，
+     <style type="text/css">  
+        #header{
+            width:360px;
+            height:80px;
+            text-align:center;
+
+        } 
     <style>
         body{background-color:rgb(223, 200, 158);}
     </style>
 
-<meta property="og:title" content="HTML練習網站">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-<meta property="og:description" content="A simple HTML5 Template for new projects.">
-<meta property="og:image" content="pancake.png">
-<!--FB放塗鴉牆吃meta的內容 / Open Graph Tag(開放社交關係圖)-->
+    <meta property="og:title" content="HTML練習網站">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="pancake.png">
+    <!--FB放塗鴉牆吃meta的內容 / Open Graph Tag(開放社交關係圖)-->
 </head>
 
 <html>
 <body>
-    <div>
-        <ul>
+    <div style="background-color:khaki">
+        <ul style="color:peru">
             <li>我是第一項</li>
             <li>我是第二項</li>
             <li>我是第三項</li>
         </ul>
-       <ol>
+       <ol style="color:peru">
             <li>我是第一項</li>
             <li>我是第二項</li>
             <li>我是第三項
-                <ul>
+                <ul style="color:peru">
                     <li>我是第一項</li>
                     <li>我是第二項</li>
                     <li>我是第三項</li>
@@ -41,8 +57,9 @@
 
       
     <div>
-        <table style="border:2px #000 dashed" rules="cols #000 dashed" cellpadding="5";>
-            <tbody>
+        <table style="border:2px #000 dashed" rules="cols #000 dashed"
+         cellpadding="10";boarder width="400">
+            
             <tr style="background-color:rgb(221, 221, 184)"> 
                 <!---table row(tr) / table data(td)實際單元格資料 / table header(th)表格欄位的標題-->
                 <th>組別</th>
@@ -59,7 +76,7 @@
                 <!--顯示水平線就寫rules="rows"，只顯示垂直線就寫"cols"，全部 "all"-->
             </tr>
             <tr>
-                <td>2</td>
+                <td >2</td>
                 <td>小華<br>小安</td>
                 <td>107012003<br>107012004</td>
             </tr>
@@ -84,6 +101,17 @@
     <a href="pancake.png">我畫的鬆餅(*ﾟ∀ﾟ*)</a><br>
 
     <img src="pancake.png" width="100px">
+    <video src="cappo.mp4" controls width="360">瀏覽器無法顯示影片</video>
+    <iframe width="360" height="280" src="https://www.youtube.com/embed/flTPANS9dsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ <div>
+    <input type="checkbox"/>我是checkbox<br>
+    <input type="range"/><br>
+    <input type="date"/><br>
+    <input type="text" placeholder="帳號"/><br>
+    <input type="password" placeholder="密碼"/><br> 
+    <textarea id="text" cols="30" rows="10">輸入框</textarea><br>
+</div>
 
 
 </body>
