@@ -1,0 +1,78 @@
+ h2{
+ color:indianred;
+ background-color:rgb(255, 229, 200);
+ display:flex;
+ justify-content:center;}
+ 
+ h3{
+    color:coral;
+    font-family: georgia; font-size:0.9rem;
+    background-color:rgb(250, 239, 227);
+    display:flex;
+    justify-content:center;
+ }
+ h3:hover{
+    background-color:rgb(255, 229, 200);
+ }
+
+ ul{
+ color:sienna; }
+
+ ol{
+color:sienna; }
+
+/* class=. & id=# */
+.example{
+    color:sienna;}
+        
+ .container{
+    margin-left:10px;
+    display: flex;
+    flex-wrap:wrap; /*wrap:根據寬高邊界折疊(換行) / direction:主軸方向*/
+    flex-direction:row; 
+    height:150px;
+    width:600px;
+    border: 1px solid darksalmon;
+    justify-content:center; 
+    /* (1)center:主軸中央/start/end
+       (2)space-around:將右邊空間剁一剁平均在區塊左右邊 
+          s-between:將1.3分配到start&end,2是中間
+          s-evenly:將所有空間平均分配到區塊2邊 */
+    align-content:center; 
+    /* (1)赤軸置中,若主赤軸both center 則會在正中間
+       (2)一樣可套用多種分配空間方式
+       (3)若區塊有摺疊(交錯軸1行&多行),則將item改成content */  }
+
+ .container div{
+    width: 100px;
+    height:20px; /*div的高度*/
+    border: 1px solid darksalmon;
+    padding: 10px;}
+
+    .box1{/*flex:寬度拿幾份,比例計算 / order:數字排列順序*/   }
+    .box2{ }
+    .box3{ }
+
+/* animation */
+ @keyframes change-color {
+    0% {background-color:rgb(209, 100, 64); top:10px; left:10px;}
+    20% {background-color:lightcoral; top:20x; left:20px;}
+    40% {background-color:brown; top:30px; left:30px;}
+    60% {background-color:rgb(209, 100, 64); top:40px; left:40px;}
+    80% {background-color:lightcoral; top:50x; left:50px;}
+    100% {background-color:brown; top:60px; left:60px;}
+    /*也可使用from to */
+}
+ 
+  .square-animation{
+    animation-name:change-color;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-delay:1s; /*delay指網路載入後延遲多久*/
+ }
+
+    .square{
+        width:100px;height:100px;
+        background-color: coral;
+    position:relative; }
+

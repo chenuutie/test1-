@@ -11,39 +11,30 @@
 
     <title>哩哩扣扣</title>
 
-    <!--告訴瀏覽器，從此段開始都為CSS語法，要插入CSS語法>，
-     <style type="text/css">  
-        #header{
-            width:360px;
-            height:80px;
-            text-align:center;
-
-        } 
-    <style>
-        body{background-color:rgb(223, 200, 158);}
-    </style>
-
     <meta property="og:title" content="HTML練習網站">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
     <meta property="og:description" content="A simple HTML5 Template for new projects.">
     <meta property="og:image" content="pancake.png">
     <!--FB放塗鴉牆吃meta的內容 / Open Graph Tag(開放社交關係圖)-->
+
+    <link rel="stylesheet" type="text/css" href="lilicoco.css"/>
+    <!-- rel:屬性 stylesheet(樣式表) / type:引入的樣式表是css檔的樣式表 / href:檔案位置 -->
 </head>
 
 <html>
-<body>
+<body style="background-color:rgb(239, 230, 207)">
     <div style="background-color:khaki">
-        <ul style="color:peru">
+        <ul>
             <li>我是第一項</li>
             <li>我是第二項</li>
             <li>我是第三項</li>
         </ul>
-       <ol style="color:peru">
+       <ol>
             <li>我是第一項</li>
             <li>我是第二項</li>
             <li>我是第三項
-                <ul style="color:peru">
+                <ul>
                     <li>我是第一項</li>
                     <li>我是第二項</li>
                     <li>我是第三項</li>
@@ -83,7 +74,7 @@
         </table>
        </div>
 
-       <div style="top:-5px;left:500px;position:relative;">
+       <div style="top:-200px;left:500px;position:relative;">
         <a href="https://github.com/chenuutie/test1-" target="_blank">連到我的github</a>
     <!--超連結屬性 _blank為開新頁面-->
         <p id="word">空白字元 &nbsp;&nbsp;&nbsp;空白字元</p>
@@ -92,9 +83,8 @@
     </div>
      <hr>
 
-
     <h2><i>---------- 7/7 課 堂 練 習 -----------</i></h2>
-    <p>今天好熱&nbsp;哭哭</p>
+    <p class="color">今天好熱&nbsp;哭哭</p>
     
     <a href="https://www.google.com.tw/?hl=zh_TW">google</a>
     <a href="../test1-/課堂練習1/inner/1.html">網頁1</a>
@@ -112,6 +102,44 @@
     <input type="password" placeholder="密碼"/><br> 
     <textarea id="text" cols="30" rows="10">輸入框</textarea><br>
 </div>
+     <h2><i>---------- 7/8 課 堂 練 習 -----------</i></h2>
+     <h3> float & display </h3>.
+     <div style="padding:20px;margin-left:10px;width:550px;
+     border:2px #000 dashed">
+        <img src="pancake.png" alt="鬆餅" width="128px" style="float:left">
+        <p class="example">Picking tea leaves from the wild is beautiful way to connect with our whenua, taking only what is needed, honouring ancient practises of sustainably while enjoying the veritable treasure trove of benefits growing in our backyards...</p>
+     </div><br>
+
+     <h3 > opacity(0-1) & border-radius </h3>
+     <div style="margin-left:10px;padding:30px;border:2px grey dashed;width:550px;height:100px">
+        <div style="position:relative;padding:30px;border:2px grey solid">
+         <div style="position:absolute;top:0px;left:0px; width:40px; height:40px;
+          background-color:rgb(195, 195, 244)"></div>
+
+          <p style="position:absolute;top:0px;left:450px;font-size:0.8rem">練習</p>
+          <div style="position:absolute;top:0px;left:440px;width:60px;height:60px;
+          background-color:lightcoral;opacity:0.5;border-radius:50%;"></div>
+      
+        </div>
+     </div><br>
+
+     <h3> flex </h3>
+     <div class="container">
+        <div class="box1">區塊1</div>
+        <div class="box2">區塊2</div>
+        <div class="box3">區塊3</div>
+        <div class="box1">區塊1</div>
+        <div class="box2">區塊2</div>
+        <div class="box3">區塊3</div>
+     </div><br>
+     <h3> animation </h3>
+       <div class="square square-animation"></div>
+    
+    </div>
+
+
+
+
 
 
 </body>
