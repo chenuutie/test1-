@@ -1,3 +1,18 @@
+ 
+ html {
+   SCROLLBAR-FACE-COLOR: #FFFFFF; /*捲軸顏色*/
+   SCROLLBAR-HIGHLIGHT-COLOR: #336699; /*捲軸左與上內邊框*/
+   SCROLLBAR-SHADOW-COLOR: #336699;/*捲軸右與下內邊框*/
+   SCROLLBAR-3DLIGHT-COLOR: #FFFFFF; /*捲軸左與上外邊框*/
+   SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;/*捲軸右與下外邊框*/
+   SCROLLBAR-ARROW-COLOR: #336699; /*捲軸箭頭*/
+   SCROLLBAR-TRACK-COLOR: #FFFFFF; /*捲軸底色*/
+   }
+ 
+
+ /* (1) CSS權重:屬性後面加 !important 權重最高 
+    (2) 子元素會繼承母元素 */
+
  h2{
  color:indianred;
  background-color:rgb(255, 229, 200);
@@ -43,7 +58,7 @@ color:sienna; }
        (2)一樣可套用多種分配空間方式
        (3)若區塊有摺疊(交錯軸1行&多行),則將item改成content */  }
 
- .container div{
+ .container div{ /* 後代選擇器 */
     width: 100px;
     height:20px; /*div的高度*/
     border: 1px solid darksalmon;
