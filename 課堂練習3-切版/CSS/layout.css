@@ -1,0 +1,75 @@
+*{
+    font-family: 思源黑體;
+}
+
+.header {
+    height:150px;
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+/* 導 覽 列 */
+.menu{
+    border-top:1px #898000 solid;
+    border-bottom:1px #898000 solid;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
+    position:relative;
+}
+.menu ul{ /*整體設定*/
+    margin:0;
+    padding:10px;
+    text-align:center;
+    list-style-type:none; /*取消小黑點*/
+    font-size:1.2rem;
+    letter-spacing: 2px;
+}
+.menu a{
+    color:black;
+    text-decoration:none; /*文字無底線*/
+    font-weight:bold;
+    display:block;
+}
+.flex-nav{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+} 
+.menu span{
+    color:#898000;
+    text-decoration:none; /*文字無底線*/
+    font-weight:bold;
+    letter-spacing:1px;
+}
+.menu ul li a:hover{
+    background-color:#DCDDDD;
+}
+.menu ul li a:nth-child(2):hover{
+    background-color:black;
+    color:#DCDDDD
+}
+.child-parent{
+    font-size:0.8rem;
+}
+menu ul li child{
+
+}
+
+
+
+
+
+
+
+
+
+h1{
+    font-size:1.2rem;
+
+}
+
+h2{
+    font-size:1rem;
+}
+

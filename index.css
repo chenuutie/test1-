@@ -3,8 +3,10 @@
          font-size:1.2rem;/*元素透過「倍數」乘以根元素(16)的px值=16*1.2*/
          display: block; /*讓<a>填滿<li> 行內元素文字多長就多寬,so改成區塊*/
         padding:10px}
+
  nav a:hover{
             background-color: darksalmon;color:beige}
+
  nav > ul {list-style: none;   /* 移除項目符號 */
             background-color: rgb(216, 168, 168);
             margin: 0;
@@ -16,7 +18,7 @@
 
  .flex-nav{
           display: flex;
-          justify-content: center
+          justify-content: center;
         }
 
 

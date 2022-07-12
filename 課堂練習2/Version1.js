@@ -59,12 +59,18 @@ function add(num1,num2){
    document.write( num1 + num2 );
    document.write("<br/>")
    return 10;
-   // 寫法二 : document.write( num1 + num2);}
+   /* 寫法二 : document.write( num1 + num2);} */
 }
    value = add(3,6);
    document.write(value);
-   //document.write( add(3,6) ); //document.write(9*100+60); 
-   // 寫法二 : add(4,6);
+   /* document.write( add(3,6) ) or document.write(9*100+60); 
+      寫法二 : add(4,6); */
    document.write("<br/>");document.write(" —————— ฅ՞•ﻌ•՞ฅ♥︎ ——————"); document.write("<br/>");
 
    //if判斷
+   /* 1.如果肚子餓 我就去吃飯 */
+   /* 2.如果今天下雨我就開車去上班 否則我就走路上班 */
+   /* 3.如果你考試100分 我給你100元 
+      或是如果 你考80分以上 我給你500元
+      或是如果 你考60分以上 我給你100元
+      否則 你給我300元  */
