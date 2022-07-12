@@ -6,20 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style type="text/css">
+    <style type="text/css">   
     
     .box-1{
         border-top:1px solid #898000;
         border-bottom:1px solid #898000;
         margin-top:10px;
         margin-bottom: 15px;
-        margin-left:15px;
+        margin-left:150px;
+        padding:30px;
     }
+
+    .box-1>div{
+        background-color: bisque;
+    }
+
     .box-2{
         border-top:1px solid cornflowerblue;
         border-bottom:1px solid cornflowerblue;
         margin-top:10px;
+        margin-left:100px;
     }    
+    .box-2 .box-21{
+        display:inline-block;
+        margin-top:50px;
+        padding:40px;
+        width:200px;
+    }
     </style>
 
 </head>
@@ -30,11 +43,21 @@
 
 <body>
 <div class="box-1">
-<p>box1</p>
-
+ <div>
+    <p>box1</p>
+ </div>
 </div>
+
  <div class="box-2">
-    <p>box2</p>
+    <span>hello</span>
+    <div class="box-21">
+        <span>box2</span>
+    </div>
+    <div class="box-22">
+       <p>box2</p>
+       <p>hello</p>
+    </div>
+
  </div>   
 
 </body>
