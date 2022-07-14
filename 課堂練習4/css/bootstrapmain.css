@@ -1,0 +1,45 @@
+
+.navbar-nav .nav-item .nav-link  {
+    color:#7b7b7b;
+
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color:darkkhaki;
+}    
+.navbar-nav li{
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+
+.jumbotron a{
+    color:#7b7b7b;
+}
+footer img{
+    width:1.5rem auto;
+    height:3.5rem;
+}
+
+ul {
+    list-style-type:none;
+    display:flex;
+    max-height: 16rem;
+    margin:0 auto;
+    justify-content: space-evenly;
+ 
+}
+
+ul i{
+    color: #7b7b7b;
+    
+}
+
+.container{
+    border-bottom:1px solid #7b7b7b;
+}
+.ul .social li{
+    margin:0 auto;
+}
+.socket a{
+    color:#7b7b7b
+}
+
