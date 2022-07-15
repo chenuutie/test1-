@@ -46,7 +46,7 @@ color:sienna; }
     flex-wrap:wrap; /*wrap:根據寬高邊界折疊(換行) / direction:主軸方向*/
     flex-direction:row; 
     height:150px;
-    width:600px;
+    width:800px;
     border: 1px solid darksalmon;
     justify-content:center; 
     /* (1)center:主軸中央/start/end
