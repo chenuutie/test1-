@@ -419,13 +419,13 @@ html {
         font-size:8px;
         padding:4px 8px 4px 8px;
         border-radius: 15px;
-        position:absolute;
+        /* position:absolute;
         right:150px;
-        top:330px;
+        top:330px; */
      }
      .shop .product .right a.button-buy-2{
-       right:150px;
-       top:270px;
+       /* right:150px;
+       top:270px; */
      } 
 } 
 
