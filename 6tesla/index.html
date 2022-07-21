@@ -6,9 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <link rel="icon" type="image/x-icon" href="./img/tesla.ico">
     <link rel="stylesheet" href="./css/main.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  
   </head>
 
 
@@ -20,9 +27,181 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+      <!--引入aos animation需先嵌入css.js及init aos-->
     
-    <section id="hero"></section>
+    <section id="hero" class="d-flex flex-column justify-content-between"> 
+        <div id="hero-top">   
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <a class="navbar-brand" href="./index.html"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto mb-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Model&ensp;S<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Model&ensp;3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Model&ensp;X</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Model&ensp;Y</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cybertruck</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Powerwall</a>
+                      </li>
+                  </ul>
+
+                  <ul class="navbar-nav2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">線上商店<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">帳戶</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">選單</a>
+                    </li>
+                  </ul> 
+            </nav>        
+
+            <h1 id="title" data-aos="fade-up">Model 3</h1>
+
+        </div>
+
+        <div id="hero-bottom">
+            <div class="container col-7">
+                <div class="row">
+
+                    <div class="col">
+                        <p class="p-top"><ion-icon name="speedometer-outline" style="font-size:30px" 
+                            class="mx-2 mt-0 p-0"></ion-icon>3.3秒</p>
+                        <p class="p-bottom">0-100 公里/小時*</p>
+                    </div>
+
+                    <div class="col">
+                        <p class="p-top">619公里</p>
+                        <p class="p-bottom">續行里程(WLTP)</p>
+                    </div>
+
+                    <div class="col">
+                        <p class="p-top">全輪驅動</p>
+                        <p class="p-bottom">雙馬達全輪驅動</p>
+                    </div>
+                    
+                    <div class="col">
+                        <div><button type="button" class="col buybtn">立即訂購</button></div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        以上數據係綜合 Model 3 各車型最佳表現並以 WLTP 標準計算，未來我們將再提供相關國際數據。
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <ion-icon name="chevron-down-outline" style="font-size:20px"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </section>
+
+    <section id="safe" class=" col-md-12 col-xs-6 d-flex flex-row-reverse mt-5">
+        <iframe data-aos="fade-up"
+        width="800" height="400" src="https://www.youtube.com/embed/laW8rtUEMyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen ></iframe>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-">
+                    <table data-aos="fade-up">
+                        <tr>
+                            <td colspan="2"><p class="text-center mb-2">5星NHTA總體評級</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="tablept text-left">駕駛人</p><p class="tablepb  text-left">前部</p></td>
+                            <td><p class="tablept  text-right ">★ ★ ★ ★ ★</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="tablept  text-left">乘客</p><p class="tablepb  text-left">前部</p></td>
+                            <td><p class="tablept  text-right">★ ★ ★ ★ ★</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="tablept  text-left">前座</p><p class="tablepb  text-left">側部</p></td>
+                            <td><p class="tablept  text-right">★ ★ ★ ★ ★</p></td>
+                        </tr>
+                        <tr> 
+                            <td><p class="tablept  text-left">後座</p><p class="tablepb  text-left">側部</p></td>
+                            <td><p class="tablept text-right">★ ★ ★ ★ ★</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="tablept  text-left">翻覆</p></td>
+                            <td><p class="tablept text-right">★ ★ ★ ★ ★</p></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+       
+        
+
+          
+        
+       
+       
+    </section>
+
+    <section data-aos="fade-up">
+        <div class="container col-12 d-flex flex-column justify-content-end mt-5" id="section3">
+            <div class="row">
+                <div class="col ">
+                    <h3>續航里程 想去哪兒都能充電</h3>
+                </div>
+                <div class="col">
+                    <p>Model 3 是完全使用電力驅動的車輛，因此您再也無須開到加油站加油。如果您晚上在家充電，次日清晨即可滿電出發。<br>當您在路上行駛時，您隨時都可以接上電源充電—透過任何公共充電站或 Tesla 的充電網路。</p>
+                </div>
+            </div>
+        </div>
+    </section >
+       
+    <section id="interior" class="text-center mt-2" data-aos="fade-up">
+        <img src="img/interior.jpg" alt="" class="w-100">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 mt-4" id="in_container">
+                <h4 class="mb-2">專為駕駛人打造</h4>
+                <button class="d-inline btn btn-outline-dark border-dark" style="font-size:20px;border-radius:50%">+</button>
+                了解更多內容
+                <button class="d-inline btn btn-outline-dark" style="font-size:20px;border-radius:40px;padding:2px 30px 2px 30px">立即訂購</button>
+            </div>
+            <div class="col-md-8 col-xs-12 text-left align-self-center mt-4">
+                <p>Model 3 的內飾與眾不同。您將能使用智慧型手機取代車鑰匙，並透過 15 吋的中央觸控式螢幕，查看及調整各項控制功能。全景玻璃車頂由前方延伸至最後，為每個座椅打造寬敞空間。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer-base">
+        <div class="text-center" style="font-size:20px;color:#fff ">Copyright © 2021 chenuutie</div>
+    </footer>
 
 </body>
 
