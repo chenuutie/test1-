@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap');
+
+/*============= header ============*/
+.main{
+   max-width:1200px;
+   margin:0 auto; 
+}
+
+nav{
+    width:100%;
+    background-color:#EFEBE0;
+    display: flex;
+    justify-content:space-around;
+}
+
+.navbar-brand{
+    color:#66779C;
+    font-family: 'Noto Serif',sans-serif;
+    font-weight:700;
+}
+.navbar-brand:hover{
+    color:#D1844B;
+
+}
+.navbar-nav a{
+    color:#D1844B;
+    font-size:18px;
+    font-family: 'Noto Serif',sans-serif;
+    font-weight:400;
+}
+.navbar-nav a:hover{
+    color:#66779C;
+}
+
+
+/*============= Onclick ============*/
+
+.onclick{
+    display:flex;
+    flex-direction: row;
+}
+.box-1{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color:#D1844B;
+    font-family: 'Noto Serif',sans-serif;
+    font-weight:700;
+}
+.box-2{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box-2 button{
+    width:300px;
+    height:100px;
+    margin-top: 20px;
+    color: #D1844B;
+    background-color: #EFEBE0;
+    border:#EFEBE0;
+    border-radius:50px;
+    font-family: 'Noto Serif',sans-serif;
+    font-weight:700;
+}
+
+.box-2 button:hover{
+    background-color: #D1844B;
+    color:#EFEBE0;
+    border:none;
+
+}
+
+/*============= Onmouseover ============*/
+.gift{
+    display: flex;
+    justify-content: center;
+}
+.gift img{
+    width:80%;
+}
+
+#box .p1{
+    font-family: 'Noto Serif',sans-serif;
+    font-weight:700;
+    font-style: italic;
+    font-size:18px;
+    color:#D1844B;
+    text-align:left;
+    margin-bottom: 3px;
+}
+
+#box .p2{
+    font-family: 'Noto Serif',sans-serif;
+    font-weight:400;
+    font-size: 12px;
+    text-align:start;
+    color:#997748;
+    width:300px;
+    font-size:8px;
+    margin-top: 0px;
+}
+
+
+.hand{
+    width:100%;
+    height:350px;
+    position: absolute;
+    top:30%;
+    left:24%;
+}
+
+.wash{
+    width:100px;
+    height:200px;
+    position: absolute;
+    top:62%;
+    left:62%;
+}
+
+.moisture{
+    width:200px;
+    height:100px;
+    position: absolute;
+    top:25%;
+    left:45%;
+}
+
+.body{
+    width: 100px;
+    height:350px;
+    position: absolute;
+    top:27%;
+    left:68%;
+}
+.body:hover, .wash:hover,.moisture:hover,.hand:hover{
+    background-color:transparnt;
+}
+#img1{
+    position:absolute;
+    left:40px;
+    top:180px;
+    display:none;
+}
+
+#img1 img{
+    width:200px;
+    height:300px;
+}
+
+#img2{
+    position:absolute;
+    right:20px;
+    top:250px;
+    display:none;
+    
+}
+
+#img2 img{
+    width:200px;
+    height:250px;
+}
+
+#img3{
+    position:absolute;
+    left:40px;
+    top:120px;
+    display:none;
+
+}
+
+#img3 img{
+    width:200px;
+    height:200px;
+}
+
+#img4{
+    position:absolute;
+    right:20px;
+    top:120px;
+    display:none;
+}
+
+#img4 img{
+    width:200px;
+    height:250px;
+}
+
+
+

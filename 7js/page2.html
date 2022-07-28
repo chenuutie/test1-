@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onclick練習 </title>
-
-    <link rel="icon" href="/7js/img/fav.ico"/>
-    <link rel="stylesheet" href="/7js/css/main.css">
-    <script type="text/javascript" src="/7js/js/main.js"></script>
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  @@include('include\head.html')
 </head>
 
 <body>
   <div class="main">
-    <nav class="navbar navbar-expand-lg ">
-        <div>
-        <a class="navbar-brand" href="/7js/index.html">220728 Javascript</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto ">
-            <a class="nav-item nav-link" href="/7js/page1.html">Onclick</a>
-            <a class="nav-item nav-link" href="/7js/page2.html">Temperature Converter</a>
-            <a class="nav-item nav-link" href="/7js/page3.html">Onchange</a>
-            <a class="nav-item nav-link" href="/7js/page4.html">#</a>
-            <a class="nav-item nav-link" href="#">#</a>
-            
-          </div>
-        </div>
-      </nav>
+    @@include('include\nav.html')  
 
       <!-- Temperature Convert 練習 -->
     <h1>溫度轉換器</h1>
