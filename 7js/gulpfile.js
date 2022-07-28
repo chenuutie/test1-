@@ -50,9 +50,9 @@ gulp.task('scss', function () {
 
 //gulp-imagemin
 gulp.task('imagemin',function(){
-    gulp.src(['dist/images/**'])
+    gulp.src(['dist/img/**'])
 		.pipe(imagemin())
-		.pipe(gulp.dest('./dist/images'));
+		.pipe(gulp.dest('./dist/img'));
 });
 
 gulp.task('html', function () {
@@ -79,8 +79,10 @@ gulp.task('gulpUglify', function () {
 
 //複製靜態檔案
 gulp.task('copy', function() { 
-	gulp.src(['src/images/**'])
-	  .pipe(gulp.dest('./dist/images'));
+  	gulp.src(['src/fonts/**'])
+	  .pipe(gulp.dest('./dist/fonts'));
+	gulp.src(['src/img/**'])
+	  .pipe(gulp.dest('./dist/img'));
 	gulp.src(['src/favicon.ico'])
 	  .pipe(gulp.dest('./dist'));
     gulp.src(['src/js/**'])
@@ -99,7 +101,7 @@ gulp.task('watch', function () {
 	gulp.watch(['src/include/*.html'], ['fileinclude']);
 	gulp.watch(['src/css/*.scss','src/css/*/*.scss'], ['scss']);
 	gulp.watch(['src/js/*.js','src/js/partials/**']);
-	gulp.watch(['src/images/**','src/js/static'], ['copy']);
+	gulp.watch(['src/img/**','src/js/static'], ['copy']);
 })
 
 //預設執行 
